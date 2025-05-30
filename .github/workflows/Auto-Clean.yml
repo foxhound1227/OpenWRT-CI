@@ -1,5 +1,6 @@
 name: Auto-Clean
 
+on:
   #手动清理
   workflow_dispatch:
 
