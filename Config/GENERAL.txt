@@ -2,12 +2,6 @@
 #CONFIG_PACKAGE_luci-app-homeproxy=y
 CONFIG_PACKAGE_luci-app-passwall=y
 
-#CONFIG_PACKAGE_shadowsocks-rust-sslocal=n
-#CONFIG_PACKAGE_shadowsocks-rust-ssmanager=n
-#CONFIG_PACKAGE_shadowsocks-rust-ssserver=n
-#CONFIG_PACKAGE_shadowsocks-rust-ssservice=n
-#CONFIG_PACKAGE_shadowsocks-rust-ssurl=n
-
 #增加插件
 CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-netspeedtest=y
