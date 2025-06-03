@@ -32,7 +32,7 @@ sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $CFG_FILE
 sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 
 vlmcsd_patches="./feeds/packages/net/vlmcsd/patches/"
-mkdir -p $vlmcsd_patches && cp -f ../patches/001-fix_compile_with_ccache.patch $vlmcsd_patches
+mkdir -p $vlmcsd_patches && cp -f ./001-fix_compile_with_ccache.patch $vlmcsd_patches
 
 #配置文件修改
 echo "CONFIG_PACKAGE_luci=y" >> ./.config
