@@ -1,5 +1,7 @@
 #!/bin/bash
-
+pwd
+ls -l
+ls -l ../
 #vlmcsd补丁
 vlmcsd_patches="./feeds/packages/net/vlmcsd/patches/"
 mkdir -p $vlmcsd_patches && cp -f ../patches/001-fix_compile_with_ccache.patch $vlmcsd_patches
