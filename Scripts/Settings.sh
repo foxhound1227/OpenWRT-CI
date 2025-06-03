@@ -4,7 +4,7 @@ ls -l
 ls -l ../
 #vlmcsd补丁
 vlmcsd_patches="./feeds/packages/net/vlmcsd/patches/"
-mkdir -p $vlmcsd_patches && cp -f ../patches/001-fix_compile_with_ccache.patch $vlmcsd_patches
+mkdir -p $vlmcsd_patches && cp -f $GITHUB_WORKSPACE/patches/001-fix_compile_with_ccache.patch $vlmcsd_patches
 
 #修改默认主题
 sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
