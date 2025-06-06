@@ -1,0 +1,38 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option packet_steering '0'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'lan'
+
+config device
+	option name 'lan'
+	option macaddr 'F8:8E:A1:93:16:b1'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'static'
+	option ipaddr '10.8.1.1'
+	option netmask '255.255.255.0'
+	option ip6assign '64'
+	option ip6ifaceid 'eui64'
+
+config device
+	option name 'wan'
+	option macaddr 'F8:8E:A1:93:16:B0'
+
+config interface 'wan'
+	option device 'wan'
+	option proto 'pppoe'
+	option username '02700678220'
+	option password '841227'
+	option ipv6 'auto'
+
