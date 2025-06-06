@@ -172,6 +172,17 @@ jobs:
 
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
+      - name: Replace Config
+        run: |
+          cd ./wrt/
+          # 创建目标目录结构
+          mkdir -p files/etc/config
+          # 复制自定义network文件
+          cp $GITHUB_WORKSPACE/config/network files/etc/config/network
+          # 设置文件权限
+          chmod 644 files/etc/config/network
+          ll files/etc/config/
+
       - name: Download Packages
         if: env.WRT_TEST != 'true'
         run: |
