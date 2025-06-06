@@ -181,6 +181,9 @@ jobs:
           if [ -f "$GITHUB_WORKSPACE/Scripts/config/network" ]; then
             # 复制自定义network文件
             cp -v "$GITHUB_WORKSPACE/Scripts/config/network" files/etc/config/network
+            cp -v "$GITHUB_WORKSPACE/Scripts/config/wireless" files/etc/config/wireless
+            cp -v "$GITHUB_WORKSPACE/Scripts/config/zerotier" files/etc/config/zerotier
+            
             # 设置文件权限
             chmod 644 files/etc/config/network
             # 使用ls检查文件（替换原来的ll命令）
