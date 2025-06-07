@@ -180,9 +180,7 @@ jobs:
           # 检查源文件是否存在
           if [ -f "$GITHUB_WORKSPACE/Scripts/config/network" ]; then
             # 复制自定义network文件
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/network" files/etc/config/network
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/wireless" files/etc/config/wireless
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/zerotier" files/etc/config/zerotier
+            cp -v "$GITHUB_WORKSPACE/Scripts/config/*" files/etc/config/
             
             # 设置文件权限
             chmod 644 files/etc/config/network
