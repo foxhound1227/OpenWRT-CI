@@ -172,27 +172,6 @@ jobs:
 
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
-      - name: Replace Config
-        run: |
-          cd ./wrt/
-          # 创建目标目录结构
-          mkdir -p files/etc/config
-          # 检查源文件是否存在
-          if [ -f "$GITHUB_WORKSPACE/Scripts/config/network" ]; then
-            # 复制自定义network文件
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/firewall" files/etc/config/firewall
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/network" files/etc/config/network
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/passwall" files/etc/config/passwall
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/wireless" files/etc/config/wireless
-            cp -v "$GITHUB_WORKSPACE/Scripts/config/zerotier" files/etc/config/zerotier
-            # 设置文件权限
-            chmod 644 files/etc/config/network
-            # 使用ls检查文件（替换原来的ll命令）
-            ls -lh files/etc/config/
-          else
-            echo "::error::Network config file not found at $GITHUB_WORKSPACE/Scripts/config/network"
-            exit 1
-          fi
 
       - name: Download Packages
         if: env.WRT_TEST != 'true'
