@@ -27,11 +27,6 @@ UPDATE_PACKAGE() {
 			echo "Not fonud directory: $NAME"
 		fi
 	done
-
-        # 添加luci-app-lucky
-        if [ ! -d "package/lucky" ]; then
-                git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
-        fi
 	
 	# 克隆 GitHub 仓库
 	git clone --depth=1 --single-branch --branch $PKG_BRANCH "https://github.com/$PKG_REPO.git"
