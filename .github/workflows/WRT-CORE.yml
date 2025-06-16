@@ -166,7 +166,7 @@ jobs:
           
           cp -rf "$GITHUB_WORKSPACE/Scripts/config/" files/etc/
           # 设置文件权限
-          chmod 644 files/etc/config/
+          chmod 755 files/etc/config/
           # 使用ls检查文件（替换原来的ll命令）
           ls -lh files/etc/config/
 
