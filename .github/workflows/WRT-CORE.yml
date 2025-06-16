@@ -158,6 +158,18 @@ jobs:
           $GITHUB_WORKSPACE/Scripts/Packages.sh
           $GITHUB_WORKSPACE/Scripts/Handles.sh
 
+      - name: Replace Config
+        run: |
+          cd ./wrt/
+          # 创建目标目录结构
+          # mkdir -p files/etc/config
+          
+          cp -rf "$GITHUB_WORKSPACE/Scripts/config/" files/etc/
+          # 设置文件权限
+          chmod 644 files/etc/config/
+          # 使用ls检查文件（替换原来的ll命令）
+          ls -lh files/etc/config/
+
       - name: Custom Settings
         run: |
           cd ./wrt/
