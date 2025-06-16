@@ -162,7 +162,7 @@ jobs:
         run: |
           cd ./wrt/
           # 创建目标目录结构
-          # mkdir -p files/etc/config
+          mkdir -p files/etc/
           
           cp -rf "$GITHUB_WORKSPACE/Scripts/config/" files/etc/
           # 设置文件权限
