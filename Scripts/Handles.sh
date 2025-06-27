@@ -107,5 +107,3 @@ if [ -f "$CM_FILE" ]; then
 	cd $PKG_PATH && echo "coremark has been fixed!"
 fi
 
-# 修改插件位置
-sed -i 's/vpn/services/g' feeds/luci/applications/luci-app-zerotier/root/usr/share/luci/menu.d/luci-app-zerotier.json
