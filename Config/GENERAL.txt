@@ -101,5 +101,6 @@ CONFIG_PACKAGE_sfdisk=y
 CONFIG_PACKAGE_sgdisk=y
 CONFIG_PACKAGE_usbmuxd=y
 CONFIG_PACKAGE_usbutils=y
+CONFIG_PACKAGE_openssh-keygen=y
 
 #CONFIG_USE_APK=n
