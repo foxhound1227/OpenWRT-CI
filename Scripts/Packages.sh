@@ -68,7 +68,7 @@ UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-ap
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 
 #lucky
-#UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main"
+UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main"
 #passwall
 #UPDATE_PACKAGE "passwall-packages" "xiaorouji/openwrt-passwall-packages" "main"
 #UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main" "pkg"
