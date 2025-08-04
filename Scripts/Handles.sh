@@ -126,4 +126,3 @@ if [ -d "$RP_PATH" ]; then
 
 	cd $PKG_PATH && echo "rpcsvc-proto has been fixed!"
 fi
-
