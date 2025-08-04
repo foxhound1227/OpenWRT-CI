@@ -33,7 +33,7 @@ jobs:
       #max-parallel: 3
       matrix:
         #CONFIG: [IPQ807X-WIFI-YES]
-        CONFIG: [IPQ60XX-WIFI-YES,IPQ807X-WIFI-YES]
+        CONFIG: [IPQ60XX-WIFI-NO,IPQ60XX-WIFI-YES,IPQ807X-WIFI-YES]
         SOURCE: [VIKINGYFY/immortalwrt]
         BRANCH: [main]
 
