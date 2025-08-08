@@ -1,0 +1,11 @@
+config zerotier 'global'
+        option enabled '1'
+        option fw_allow_input '1'
+        option secret '86350ec17c:0:043f4f17d95ffdcaedb663e34f7139aeeefbeed59c86bf8bd5613ea7cd157d4497914648d17361ea95e46624b3591944b4aabbc0e9b396c932b11b527616b51d:de49ee074b55d7e1e7a49179549009a37506ae1a32b7924e3c9af9c142db4cc57473e6302da47ff37dc6f1f0352c09e4abc513633d5f40f2607dcb3ac55bbbba'
+
+config network 'earth'
+        option id '8bd5124fd60a0544'
+        option allow_global '1'
+        option allow_default '1'
+        option fw_allow_input '1'
+        option fw_allow_forward '1'
