@@ -1,0 +1,24 @@
+
+config easytier
+	option enabled '1'
+	option easytierbin '/usr/bin/easytier-core'
+	option etcmd 'web'
+	option web_config 'bruce'
+	option tcp_port '11010'
+	option ws_port '11011'
+	option wss_port '11012'
+	option desvice_name 'Aliyun_AP8220'
+	option log 'off'
+	option et_forward 'etfwlan etfwwan lanfwet'
+	option webbin '/usr/bin/easytier-web'
+
+config easytierweb
+	option enabled '0'
+	option db_path '/etc/easytier/et.db'
+	option web_protocol 'udp'
+	option web_port '22020'
+	option api_port '11211'
+	option html_port '11211'
+	option api_host 'http://10.8.1.1/24:11211'
+	option weblog 'off'
+
