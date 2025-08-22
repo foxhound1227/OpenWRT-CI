@@ -114,5 +114,6 @@ CONFIG_PACKAGE_openssl-util=y
 #python
 CONFIG_PACKAGE_python3-pip=y
 CONFIG_PACKAGE_python3=y
+CONFIG_PACKAGE_python3-cryptography=y
 
 #CONFIG_USE_APK=n
